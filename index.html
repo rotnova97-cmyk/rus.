@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Казахстан в будущем. Степени сравнения наречий</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    /* Улучшение внешнего вида выпадающих списков */
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: right 0.5rem center;
+      background-size: 1.5em 1.5em;
+      padding-right: 2.5rem !important;
+    }
+    .line-through-red {
+      text-decoration: line-through;
+      text-decoration-color: #ef4444;
+      text-decoration-thickness: 2px;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800">
+
+  <div class="min-h-screen flex flex-col md:flex-row">
+    
+    <!-- LEFT CONTENT AREA -->
+    <div class="flex-1 p-4 md:p-8 md:pr-[350px]">
+      
+      <!-- Header -->
+      <header class="mb-10 text-center md:text-left bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-8 rounded-3xl shadow-xl">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-md">Казахстан в будущем.</h1>
+        <h2 class="text-3xl md:text-4xl font-medium opacity-90">Степени сравнения наречий</h2>
+        <p class="mt-4 text-xl text-blue-100 flex items-center justify-center md:justify-start">
+          <i data-lucide="book-open" class="mr-2 w-6 h-6"></i>
+          Интерактивный урок русского языка • 6 класс
+        </p>
+      </header>
+
+      <!-- TASK 1 -->
+      <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 mb-10 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-2 h-full bg-blue-500"></div>
+        <div class="flex justify-between items-start mb-6">
+          <h3 class="text-3xl font-bold text-slate-800 flex items-center">
+            <span class="bg-blue-100 text-blue-700 w-10 h-10 rounded-full flex items-center justify-center mr-3">1</span>
+            Особенности жанров публицистики
+          </h3>
+          <span class="text-lg bg-slate-100 px-4 py-1.5 rounded-full text-slate-500 border border-slate-200">2 балла</span>
+        </div>
+        
+        <div class="bg-blue-50 p-5 rounded-xl text-lg text-blue-800 mb-8 flex items-start">
+          <i data-lucide="target" class="mr-3 shrink-0 mt-1 w-5 h-5"></i>
+          <p><strong>Дескрипторы:</strong> сравнивает жанровые особенности текстов разных стилей (2б).</p>
+        </div>
+
+        <p class="mb-6 text-2xl font-medium text-slate-700">Определите жанр для каждой характеристики (моментальная проверка).</p>
+        
+        <div id="t1-container" class="space-y-4 mb-8">
+          <!-- Рендерится через JS -->
+        </div>
+
+        <div id="t1-success" class="hidden mt-8 text-green-700 text-2xl font-bold flex items-center justify-center bg-green-50 p-6 rounded-xl border border-green-200 shadow-sm">
+          <i data-lucide="check-circle" class="mr-3 w-8 h-8"></i> Идеально! Все жанры определены верно.
+        </div>
+      </section>
+
+      <!-- TASK 2 -->
+      <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 mb-10 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-2 h-full bg-indigo-500"></div>
+        <div class="flex justify-between items-start mb-6">
+          <h3 class="text-3xl font-bold text-slate-800 flex items-center">
+            <span class="bg-indigo-100 text-indigo-700 w-10 h-10 rounded-full flex items-center justify-center mr-3">2</span>
+            Работа с текстом
+          </h3>
+          <span class="text-lg bg-slate-100 px-4 py-1.5 rounded-full text-slate-500 border border-slate-200">2 балла</span>
+        </div>
+
+        <div class="bg-indigo-50 p-5 rounded-xl text-lg text-indigo-800 mb-8 flex items-start">
+          <i data-lucide="target" class="mr-3 shrink-0 mt-1 w-5 h-5"></i>
+          <p><strong>Дескрипторы:</strong> аргументированно высказывает собственное мнение по предложенной проблеме (2б).</p>
+        </div>
+
+        <p class="mb-6 text-2xl font-medium text-slate-700">Прочитайте два текста. Какой из них является заметкой, а какой – репортажем?</p>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-8">
+          <div class="border border-slate-200 p-6 rounded-xl bg-slate-50 shadow-sm relative">
+            <div class="absolute top-0 right-0 bg-slate-200 text-slate-600 text-sm px-3 py-1 rounded-bl-xl font-bold">Текст 1</div>
+            <p class="text-xl mb-6 text-slate-700 leading-relaxed italic">
+              20 декабря 2022 года в Доме Дружбы города Алматы прошло торжественное награждение победителей конкурса детских и юношеских рисунков “Мечты о будущем: мой Казахстан”. Выставка была открыта руководителем Дома Дружбы. Всего было представлено более 80 работ. Участники были награждены дипломами.
+            </p>
+            <select id="t2-sel1" class="w-full p-3 text-xl border border-indigo-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white">
+              <option value="">-- Жанр этого текста --</option>
+              <option value="Репортаж">Репортаж</option>
+              <option value="Заметка">Заметка</option>
+            </select>
+          </div>
+
+          <div class="border border-slate-200 p-6 rounded-xl bg-slate-50 shadow-sm relative">
+            <div class="absolute top-0 right-0 bg-slate-200 text-slate-600 text-sm px-3 py-1 rounded-bl-xl font-bold">Текст 2</div>
+            <p class="text-xl mb-6 text-slate-700 leading-relaxed italic">
+              Мы находимся в Алматы в микрорайоне Коктем в музее искусств имени А. Кастеева. Здесь открылась выставка "Казахстан моей мечты". А вот и одна из победительниц - 12-летняя София Сон. Подойдем к ней. <br/>- София скажите, как давно вы рисуете? <br/>- С пяти лет...
+            </p>
+            <select id="t2-sel2" class="w-full p-3 text-xl border border-indigo-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white">
+              <option value="">-- Жанр этого текста --</option>
+              <option value="Репортаж">Репортаж</option>
+              <option value="Заметка">Заметка</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="t2-action-area" class="flex flex-wrap items-center gap-4">
+          <button id="t2-check-btn" class="bg-indigo-600 hover:bg-indigo-700 text-white text-xl font-medium py-3 px-8 rounded-lg transition-colors flex items-center">
+            Проверить ответ <i data-lucide="chevron-right" class="ml-2 w-5 h-5"></i>
+          </button>
+          <span id="t2-error-msg" class="hidden text-red-500 text-xl font-medium">Подумай еще. Ознакомься с аргументами ниже!</span>
+        </div>
+        
+        <div id="t2-success" class="hidden text-green-700 text-xl font-bold flex items-center bg-green-50 p-4 rounded-xl border border-green-200 inline-flex">
+          <i data-lucide="check-circle" class="mr-2 w-6 h-6"></i> Супер! Жанры определены верно.
+        </div>
+
+        <div id="t2-args" class="hidden mt-8 bg-indigo-50/50 border border-indigo-100 p-6 rounded-xl">
+          <h4 class="text-2xl font-bold text-indigo-800 mb-3 flex items-center">
+             <i data-lucide="message-circle" class="mr-2 w-6 h-6"></i> Возможные аргументы
+          </h4>
+          <ul class="list-disc pl-6 space-y-3 text-xl text-slate-700">
+            <li><strong>В первом тексте (Заметка):</strong> сухое изложение фактов (где, когда, что прошло), преобладает информативность, отсутствует прямая речь и личное присутствие автора.</li>
+            <li><strong>Во втором тексте (Репортаж):</strong> создается «эффект присутствия» (мы находимся, здесь открылась, подойдем), используется прямая речь в виде мини-интервью, текст более эмоционален.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- TASK 3 -->
+      <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 mb-10 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-2 h-full bg-pink-500"></div>
+        <div class="flex justify-between items-start mb-6">
+          <h3 class="text-3xl font-bold text-slate-800 flex items-center">
+            <span class="bg-pink-100 text-pink-700 w-10 h-10 rounded-full flex items-center justify-center mr-3">3</span>
+            Конкурс шпаргалок
+          </h3>
+          <span class="text-lg bg-slate-100 px-4 py-1.5 rounded-full text-slate-500 border border-slate-200">4 балла</span>
+        </div>
+
+        <div class="bg-pink-50 p-5 rounded-xl text-lg text-pink-800 mb-8 flex items-start">
+          <i data-lucide="target" class="mr-3 shrink-0 mt-1 w-5 h-5"></i>
+          <p><strong>Дескрипторы:</strong> составляет шпаргалку (2б); рассказывает правило по шпаргалке (2б).</p>
+        </div>
+
+        <p class="mb-6 text-2xl font-medium text-slate-700">Напишите кратко, точно и разборчиво всю информацию о <strong>степенях сравнения наречий</strong>. Запротоколируй свои знания!</p>
+
+        <textarea id="t3-text" class="w-full h-40 p-5 text-xl border border-pink-200 rounded-xl bg-pink-50/30 focus:ring-2 focus:ring-pink-500 focus:outline-none mb-6 leading-relaxed" placeholder="Сравнительная степень бывает простой (суффиксы -е, -ее) и составной (более/менее + наречие). Превосходная..."></textarea>
+
+        <button id="t3-check-btn" class="bg-pink-600 hover:bg-pink-700 text-white text-xl font-medium py-3 px-8 rounded-lg transition-colors flex items-center">
+          <i data-lucide="pen-tool" class="mr-2 w-5 h-5"></i> Сдать шпаргалку
+        </button>
+        
+        <div id="t3-success" class="hidden text-pink-700 text-xl font-bold flex items-center bg-pink-100 p-4 rounded-xl inline-flex">
+          <i data-lucide="star" class="mr-2 text-pink-600 w-6 h-6"></i> Шпаргалка принята! Молодец!
+        </div>
+      </section>
+
+      <!-- TASK 4 -->
+      <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 mb-10 relative overflow-hidden">
+         <div class="absolute top-0 left-0 w-2 h-full bg-amber-500"></div>
+         <div class="flex justify-between items-start mb-6">
+          <h3 class="text-3xl font-bold text-slate-800 flex items-center">
+            <span class="bg-amber-100 text-amber-700 w-10 h-10 rounded-full flex items-center justify-center mr-3">4</span>
+            Смекалка: Фразеологизмы
+          </h3>
+          <span class="text-lg bg-slate-100 px-4 py-1.5 rounded-full text-slate-500 border border-slate-200">2 балла</span>
+        </div>
+
+        <div class="bg-amber-50 p-5 rounded-xl text-lg text-amber-800 mb-8 flex items-start">
+          <i data-lucide="target" class="mr-3 shrink-0 mt-1 w-5 h-5"></i>
+          <p><strong>Дескрипторы:</strong> подбирает синонимы-наречия, образуют степень сравнения (2б).</p>
+        </div>
+
+        <p class="mb-6 text-2xl font-medium text-slate-700">Замените фразеологизмы одним словом – <strong>синонимом-наречием</strong>. Нажмите на глазик, чтобы проверить себя и увидеть степени сравнения!</p>
+        
+        <div id="t4-container" class="grid gap-4 mb-8">
+          <!-- Рендерится через JS -->
+        </div>
+
+        <button id="t4-check-btn" class="bg-amber-500 hover:bg-amber-600 text-white text-xl font-medium py-3 px-8 rounded-lg transition-colors flex items-center">
+          Завершить упражнение
+        </button>
+        
+        <div id="t4-success" class="hidden text-green-700 text-xl font-bold flex items-center bg-green-50 p-4 rounded-xl border border-green-200 inline-flex">
+          <i data-lucide="check-circle" class="mr-2 w-6 h-6"></i> Отлично! Работа с фразеологизмами завершена.
+        </div>
+      </section>
+
+      <!-- TASK 5 -->
+      <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 mb-10 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-2 h-full bg-emerald-500"></div>
+         <div class="flex justify-between items-start mb-6">
+          <h3 class="text-3xl font-bold text-slate-800 flex items-center">
+            <span class="bg-emerald-100 text-emerald-700 w-10 h-10 rounded-full flex items-center justify-center mr-3">5</span>
+            Стихотворение Н. Языкова
+          </h3>
+          <span class="text-lg bg-slate-100 px-4 py-1.5 rounded-full text-slate-500 border border-slate-200">3 балла</span>
+        </div>
+
+        <div class="bg-emerald-50 p-5 rounded-xl text-lg text-emerald-800 mb-8 flex items-start">
+          <i data-lucide="target" class="mr-3 shrink-0 mt-1 w-5 h-5"></i>
+          <p><strong>Дескрипторы:</strong> рассказывает, как отличать наречия и прилагательные (1б); различает наречия и прилагательные (2б).</p>
+        </div>
+
+        <p class="mb-6 text-2xl font-medium text-slate-700">Выразительно прочитайте стихотворение. Укажите через выпадающий список, чем являются выделенные слова.</p>
+
+        <div id="t5-container" class="bg-[#fdfbf7] border border-emerald-100 p-8 rounded-xl font-serif text-2xl leading-loose shadow-inner mb-8">
+          <!-- Генерируется через JS для удобства привязки событий -->
+        </div>
+
+        <div id="t5-action-area" class="flex flex-col sm:flex-row items-center gap-6">
+          <button id="t5-check-btn" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xl font-medium py-3 px-8 rounded-lg transition-colors">
+            Проверить
+          </button>
+          <p id="t5-error-msg" class="hidden text-xl font-bold text-red-600"></p>
+        </div>
+        
+        <div id="t5-success" class="hidden text-emerald-700 text-xl font-bold flex items-center bg-emerald-50 p-4 rounded-xl border border-emerald-200 inline-flex">
+           <i data-lucide="check-circle" class="mr-2 w-6 h-6"></i> Идеально! Все слова определены верно.
+        </div>
+      </section>
+
+      <!-- TASK 6 -->
+      <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 mb-10 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-2 h-full bg-cyan-500"></div>
+        <div class="flex justify-between items-start mb-6">
+          <h3 class="text-3xl font-bold text-slate-800 flex items-center">
+            <span class="bg-cyan-100 text-cyan-700 w-10 h-10 rounded-full flex items-center justify-center mr-3">6</span>
+            Группировка: Диктант
+          </h3>
+          <span class="text-lg bg-slate-100 px-4 py-1.5 rounded-full text-slate-500 border border-slate-200">2 балла</span>
+        </div>
+        
+        <div class="bg-cyan-50 p-5 rounded-xl text-lg text-cyan-800 mb-8 flex items-start">
+          <i data-lucide="target" class="mr-3 shrink-0 mt-1 w-5 h-5"></i>
+          <p><strong>Дескрипторы:</strong> группирует наречия и прилагательные в степени сравнения (2б).</p>
+        </div>
+
+        <p class="mb-6 text-2xl font-medium text-slate-700">Определите, в каких предложениях употреблено прилагательное в сравнительной степени, а в каких – наречие.</p>
+
+        <div id="t6-container" class="space-y-4 mb-8">
+          <!-- Рендерится через JS -->
+        </div>
+
+        <div id="t6-action-area" class="flex items-center gap-6">
+          <button id="t6-check-btn" class="bg-cyan-600 hover:bg-cyan-700 text-white text-xl font-medium py-3 px-8 rounded-lg transition-colors">
+            Проверить сортировку
+          </button>
+          <p id="t6-error-msg" class="hidden text-xl font-bold text-red-600">Найдены ошибки. Исправьте выделенные красным варианты!</p>
+        </div>
+        
+        <div id="t6-success" class="hidden text-green-700 text-xl font-bold flex items-center bg-green-50 p-4 rounded-xl border border-green-200 inline-flex">
+           <i data-lucide="check-circle" class="mr-2 w-6 h-6"></i> Отличная работа! Все слова сгруппированы верно.
+        </div>
+      </section>
+
+      <!-- TASK 7 -->
+      <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 mb-10 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-2 h-full bg-red-500"></div>
+        <div class="flex justify-between items-start mb-6">
+          <h3 class="text-3xl font-bold text-slate-800 flex items-center">
+            <span class="bg-red-100 text-red-700 w-10 h-10 rounded-full flex items-center justify-center mr-3">7</span>
+            Поиск ошибок
+          </h3>
+          <span class="text-lg bg-slate-100 px-4 py-1.5 rounded-full text-slate-500 border border-slate-200">3 балла</span>
+        </div>
+
+        <div class="bg-red-50 p-5 rounded-xl text-lg text-red-800 mb-8 flex items-start">
+          <i data-lucide="target" class="mr-3 shrink-0 mt-1 w-5 h-5"></i>
+          <p><strong>Дескрипторы:</strong> находит и исправляет ошибки в образовании степеней сравнения (3б).</p>
+        </div>
+
+        <p class="mb-6 text-2xl font-medium text-slate-700">Найдите ошибки в предложениях. Впишите правильную форму. Нажмите на глазик, чтобы проверить себя и увидеть, где именно была ошибка.</p>
+
+        <div id="t7-container" class="grid gap-5 mb-8">
+          <!-- Рендерится через JS -->
+        </div>
+
+        <button id="t7-check-btn" class="bg-red-500 hover:bg-red-600 text-white text-xl font-bold py-3 px-10 rounded-full shadow-lg transform hover:scale-105 transition-all">
+          Завершить поиск
+        </button>
+        
+        <div id="t7-success" class="hidden text-red-600 font-bold flex items-center bg-red-50 p-4 rounded-xl border border-red-200 inline-flex text-xl">
+           <i data-lucide="award" class="mr-3 w-8 h-8"></i> Отличная работа! Ошибки найдены.
+        </div>
+      </section>
+
+      <!-- REFLECTION -->
+      <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-10 mb-10 text-center bg-gradient-to-b from-white to-blue-50">
+        <h3 class="text-3xl font-bold text-slate-800 mb-4 flex items-center justify-center">
+          <i data-lucide="message-circle" class="mr-3 text-blue-500 w-8 h-8"></i> Рефлексия «ПЛЮМИН»
+        </h3>
+        <p class="text-xl text-slate-600 mb-8">Отметьте теги, которые соответствуют вашим впечатлениям от урока.</p>
+        
+        <div class="grid md:grid-cols-3 gap-8 text-left">
+          <div>
+            <label class="block text-green-700 font-bold mb-4 text-2xl border-b-2 border-green-200 pb-2">+ Плюс</label>
+            <div id="ref-plus" class="flex flex-wrap gap-2"></div>
+          </div>
+          <div>
+            <label class="block text-red-700 font-bold mb-4 text-2xl border-b-2 border-red-200 pb-2">- Минус</label>
+            <div id="ref-minus" class="flex flex-wrap gap-2"></div>
+          </div>
+          <div>
+            <label class="block text-purple-700 font-bold mb-4 text-2xl border-b-2 border-purple-200 pb-2">? Интересно</label>
+            <div id="ref-interesting" class="flex flex-wrap gap-2"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOMEWORK -->
+      <section class="bg-slate-800 text-white rounded-2xl shadow-lg p-10 relative overflow-hidden">
+         <div class="absolute top-0 right-0 p-8 opacity-10">
+            <i data-lucide="book-open" class="w-48 h-48"></i>
+         </div>
+         <h3 class="text-3xl font-bold mb-6 flex items-center relative z-10">
+           Домашнее задание
+         </h3>
+         <p class="text-xl text-slate-300 mb-6 relative z-10">
+           Составьте небольшой рассказ по иллюстрации. Используйте наречия и прилагательные в разных степенях сравнения.
+         </p>
+         <div class="bg-slate-700 p-6 rounded-xl text-lg italic text-slate-200 relative z-10 leading-relaxed border-l-4 border-blue-400">
+            <p class="mb-4"><strong>Пример:</strong> На сегодня максимальное расстояние, которое удалось покрыть лягушке в тройном прыжке - 10,3 м. Самый длинный прыжок из трёх длиной 3,6 м.</p>
+            <p>Конечно, человек умеет и плавать. Но соревноваться с обитателями водной стихии ему не под силу. Даже морские черепахи передвигаются в воде в семь раз <strong>быстрее</strong>. Кожистые черепахи <strong>более уязвимы</strong>, чем их родственницы, защищенные панцирем. Поэтому и плавают <strong>активнее</strong>.</p>
+         </div>
+      </section>
+
+    </div>
+
+    <!-- RIGHT SIDEBAR - PROGRESS PANEL -->
+    <div class="md:w-[350px] md:fixed md:top-0 md:right-0 md:h-screen bg-white shadow-[-4px_0_15px_rgba(0,0,0,0.05)] border-l border-slate-200 flex flex-col z-20 overflow-y-auto">
+      <div class="p-8 bg-gradient-to-br from-indigo-50 to-blue-50 border-b border-blue-100 flex-shrink-0">
+        <h2 class="text-2xl font-extrabold text-slate-800 mb-4 flex items-center">
+          <i data-lucide="target" class="mr-2 text-blue-600 w-6 h-6"></i> Цели урока
+        </h2>
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-blue-100 text-center relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-full h-1.5 bg-blue-100">
+             <div id="progress-bar-fill" class="h-full bg-blue-500 transition-all duration-1000" style="width: 0%"></div>
+          </div>
+          <p class="text-sm text-slate-500 uppercase tracking-wider font-bold mb-2">Ваш результат</p>
+          <div class="text-5xl font-black text-blue-600">
+            <span id="score-current">0</span> <span class="text-xl text-slate-400 font-medium">/ 18</span>
+          </div>
+          <p class="text-sm text-slate-400 mt-2">баллов заработано</p>
+        </div>
+      </div>
+
+      <div class="p-8 flex-1 overflow-y-auto">
+        <div class="space-y-6 relative">
+           <div class="absolute left-[19px] top-6 bottom-6 w-0.5 bg-slate-200 z-0"></div>
+
+           <!-- Goals rendered dynamically -->
+           <div id="goals-container" class="space-y-6"></div>
+
+        </div>
+
+        <div id="all-complete-banner" class="hidden mt-10 p-5 bg-green-100 rounded-2xl border border-green-200 text-center animate-bounce">
+          <i data-lucide="award" class="mx-auto text-green-600 mb-3 w-10 h-10"></i>
+          <h4 class="font-bold text-green-800 text-lg">Урок пройден!</h4>
+          <p class="text-sm text-green-700 mt-1">Все цели достигнуты.</p>
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+
+  <script>
+    // --- GLOBAL STATE ---
+    const progress = {
+      task1: { completed: false, score: 0, max: 2 },
+      task2: { completed: false, score: 0, max: 2 },
+      task3: { completed: false, score: 0, max: 4 },
+      task4: { completed: false, score: 0, max: 2 },
+      task5: { completed: false, score: 0, max: 3 },
+      task6: { completed: false, score: 0, max: 2 },
+      task7: { completed: false, score: 0, max: 3 }
+    };
+
+    const maxTotalScore = Object.values(progress).reduce((acc, curr) => acc + curr.max, 0);
+
+    const goalsConfig = [
+      { id: 'g1', tasks: ['task1'], text: 'Распределять признаки заметки и репортажа' },
+      { id: 'g2', tasks: ['task2'], text: 'Аргументировать выбор жанра' },
+      { id: 'g3', tasks: ['task3'], text: 'Составлять шпаргалки (конкурс)' },
+      { id: 'g4', tasks: ['task4'], text: 'Подбирать к фразеологизмам синонимы' },
+      { id: 'g5', tasks: ['task5', 'task6'], text: 'Различать наречия и прилагательные' },
+      { id: 'g6', tasks: ['task7'], text: 'Исправлять ошибки в употреблении' }
+    ];
+
+    function updateProgressUI() {
+      const currentScore = Object.values(progress).reduce((acc, curr) => acc + curr.score, 0);
+      document.getElementById('score-current').innerText = currentScore;
+      document.getElementById('progress-bar-fill').style.width = `${(currentScore / maxTotalScore) * 100}%`;
+
+      const goalsHtml = goalsConfig.map(goal => {
+        const isCompleted = goal.tasks.every(t => progress[t].completed);
+        const iconHtml = isCompleted 
+          ? `<i data-lucide="check" class="w-5 h-5"></i>` 
+          : `<span class="w-2.5 h-2.5 rounded-full bg-slate-300"></span>`;
+        const borderClass = isCompleted ? 'border-green-500 text-green-500' : 'border-slate-300 text-slate-300';
+        const textClass = isCompleted ? 'text-slate-800' : 'text-slate-500';
+
+        return `
+          <div class="relative z-10 flex items-start">
+             <div class="w-10 h-10 rounded-full border-2 flex items-center justify-center bg-white mt-1 shrink-0 transition-colors ${borderClass}">
+               ${iconHtml}
+             </div>
+             <div class="ml-4">
+               <p class="text-base font-medium mt-2 ${textClass}">${goal.text}</p>
+             </div>
+           </div>
+        `;
+      }).join('');
+
+      document.getElementById('goals-container').innerHTML = goalsHtml;
+      
+      if (currentScore === maxTotalScore) {
+        document.getElementById('all-complete-banner').classList.remove('hidden');
+      }
+      lucide.createIcons();
+    }
+
+    function markTaskComplete(taskId, score) {
+      if(!progress[taskId].completed) {
+        progress[taskId].completed = true;
+        progress[taskId].score = score;
+        updateProgressUI();
+      }
+    }
+
+    // --- TASK 1 ---
+    let t1Features = [
+      { id: 1, title: "Оперативность", desc: "пишется непосредственно во время события или сразу после него", correct: "Репортаж", choice: null, isChecked: false },
+      { id: 2, title: "Документальность", desc: "нужно стараться передать атмосферу события и максимум информации", correct: "Репортаж", choice: null, isChecked: false },
+      { id: 3, title: "Объективность (факты)", desc: "следует избегать субъективных оценок и предоставлять факты", correct: "Репортаж", choice: null, isChecked: false },
+      { id: 4, title: "Эмоциональность", desc: "важно не переходить грань между эмоциональностью и субъективностью", correct: "Репортаж", choice: null, isChecked: false },
+      { id: 5, title: "Детализация", desc: "обращается внимание на детали, которые могут быть важны для читателя", correct: "Репортаж", choice: null, isChecked: false },
+      { id: 6, title: "Хронология", desc: "обычно строится по принципу “от начала до конца”", correct: "Репортаж", choice: null, isChecked: false },
+      { id: 7, title: "Прямая речь", desc: "можно использовать прямую речь участников для передачи их точки зрения", correct: "Репортаж", choice: null, isChecked: false },
+      { id: 8, title: "Разнообразие источников", desc: "интервью с участниками события, официальные документы и т.д.", correct: "Репортаж", choice: null, isChecked: false },
+      { id: 9, title: "Краткость", desc: "содержит только необходимую информацию", correct: "Заметка", choice: null, isChecked: false },
+      { id: 10, title: "Объективность (без мнений)", desc: "не содержит субъективных оценок или мнений автора", correct: "Заметка", choice: null, isChecked: false },
+      { id: 11, title: "Точность", desc: "должна содержать точную и проверенную информацию", correct: "Заметка", choice: null, isChecked: false },
+      { id: 12, title: "Актуальность", desc: "должна быть актуальной и представлять интерес для читателей", correct: "Заметка", choice: null, isChecked: false },
+    ].sort(() => Math.random() - 0.5);
+
+    function renderTask1() {
+      const container = document.getElementById('t1-container');
+      const isCompleted = progress.task1.completed;
+      
+      container.innerHTML = t1Features.map(f => {
+        let rowStyle = "bg-slate-50 border-slate-200";
+        let errorMsg = "";
+        
+        if (f.isChecked) {
+          if (f.choice === f.correct) {
+            rowStyle = "bg-green-50 border-green-300";
+          } else {
+            rowStyle = "bg-red-50 border-red-300";
+            errorMsg = `<span class="block mt-2 text-lg text-red-600 font-bold flex items-center"><i data-lucide="x-circle" class="mr-1 w-5 h-5"></i> Неверно, попробуйте другой жанр!</span>`;
+          }
+        }
+
+        const btnDisabled = isCompleted || (f.isChecked && f.choice === f.correct) ? 'disabled' : '';
+        const btnZametkaClass = f.choice === 'Заметка' ? 'bg-blue-600 text-white border-blue-600' : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-100';
+        const btnReportazhClass = f.choice === 'Репортаж' ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-100';
+
+        return `
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between p-4 border rounded-xl transition-colors ${rowStyle}">
+            <div class="mb-4 lg:mb-0 lg:w-2/3 pr-4">
+              <span class="font-bold text-2xl text-slate-800">${f.title}:</span> <span class="text-xl text-slate-600">${f.desc}</span>
+              ${errorMsg}
+            </div>
+            <div class="flex space-x-3 lg:w-1/3 lg:justify-end">
+              <button ${btnDisabled} onclick="handleT1Select(${f.id}, 'Заметка')" class="px-5 py-2 rounded-lg text-lg font-medium border transition-colors flex-1 lg:flex-none ${btnZametkaClass}">Заметка</button>
+              <button ${btnDisabled} onclick="handleT1Select(${f.id}, 'Репортаж')" class="px-5 py-2 rounded-lg text-lg font-medium border transition-colors flex-1 lg:flex-none ${btnReportazhClass}">Репортаж</button>
+            </div>
+          </div>
+        `;
+      }).join('');
+      
+      lucide.createIcons();
+    }
+
+    function handleT1Select(id, choice) {
+      if(progress.task1.completed) return;
+      const item = t1Features.find(f => f.id === id);
+      if(item) {
+        item.choice = choice;
+        item.isChecked = true;
+      }
+      
+      if (t1Features.every(f => f.choice === f.correct)) {
+        markTaskComplete('task1', 2);
+        document.getElementById('t1-success').classList.remove('hidden');
+      }
+      renderTask1();
+    }
+
+    // --- TASK 2 ---
+    document.getElementById('t2-check-btn').addEventListener('click', () => {
+      const val1 = document.getElementById('t2-sel1').value;
+      const val2 = document.getElementById('t2-sel2').value;
+      document.getElementById('t2-args').classList.remove('hidden');
+      
+      if (val1 === 'Заметка' && val2 === 'Репортаж') {
+        markTaskComplete('task2', 2);
+        document.getElementById('t2-action-area').classList.add('hidden');
+        document.getElementById('t2-success').classList.remove('hidden');
+        document.getElementById('t2-sel1').disabled = true;
+        document.getElementById('t2-sel2').disabled = true;
+      } else {
+        document.getElementById('t2-error-msg').classList.remove('hidden');
+      }
+    });
+
+    // --- TASK 3 ---
+    document.getElementById('t3-check-btn').addEventListener('click', () => {
+      const text = document.getElementById('t3-text').value.trim();
+      if (text.length > 20) {
+        markTaskComplete('task3', 4);
+        document.getElementById('t3-check-btn').classList.add('hidden');
+        document.getElementById('t3-success').classList.remove('hidden');
+        document.getElementById('t3-text').disabled = true;
+      } else {
+        alert("Пожалуйста, напишите более подробную шпаргалку (минимум 20 символов).");
+      }
+    });
+
+    // --- TASK 4 ---
+    const t4Idioms = [
+      { id: 'i1', text: "Положа руку на сердце", ans: "честно", degrees: "Сравн: честнее, более честно. Превосх: честнее всех." },
+      { id: 'i2', text: "У черта на куличках", ans: "далеко", degrees: "Сравн: дальше, более далеко. Превосх: дальше всех." },
+      { id: 'i3', text: "Рукой подать", ans: "близко", degrees: "Сравн: ближе, более близко. Превосх: ближе всех." },
+      { id: 'i4', text: "Как в аптеке", ans: "точно", degrees: "Сравн: точнее, более точно. Превосх: точнее всех." },
+      { id: 'i5', text: "Как баран на новые ворота", ans: "глупо / недоуменно", degrees: "Сравн: глупее, более глупо. Превосх: глупее всех." },
+      { id: 'i6', text: "На широкую ногу", ans: "богато / роскошно", degrees: "Сравн: богаче, более богато. Превосх: богаче всех." },
+      { id: 'i7', text: "Черным по белому", ans: "ясно / понятно", degrees: "Сравн: яснее, более ясно. Превосх: яснее всех." },
+      { id: 'i8', text: "Битый час", ans: "долго", degrees: "Сравн: дольше, более долго. Превосх: дольше всех." },
+      { id: 'i9', text: "Бок о бок", ans: "рядом / близко", degrees: "Сравн: ближе, более близко. Превосх: ближе всех." },
+      { id: 'i10', text: "Вверх дном", ans: "наоборот / беспорядочно", degrees: "Сравн: беспорядочнее, более беспорядочно. Превосх: беспорядочнее всех." },
+      { id: 'i11', text: "На вес золота", ans: "дорого / ценно", degrees: "Сравн: дороже, более дорого. Превосх: дороже всех." },
+      { id: 'i12', text: "Душа в душу", ans: "дружно / мирно", degrees: "Сравн: дружнее, более дружно. Превосх: дружнее всех." },
+      { id: 'i13', text: "Не покладая рук", ans: "усердно / неустанно", degrees: "Сравн: усерднее, более усердно. Превосх: усерднее всех." }
+    ];
+    let t4Revealed = {};
+
+    function renderTask4() {
+      const container = document.getElementById('t4-container');
+      const isCompleted = progress.task4.completed;
+
+      container.innerHTML = t4Idioms.map(item => {
+        const revealed = t4Revealed[item.id];
+        const btnClass = revealed ? 'bg-amber-100 border-amber-300 text-amber-700' : 'bg-white border-slate-300 text-slate-400 hover:text-amber-600';
+        const disabled = isCompleted ? 'disabled' : '';
+        
+        let revealHtml = '';
+        if (revealed) {
+          revealHtml = `
+            <div class="w-full mt-3 xl:mt-0 xl:w-auto bg-emerald-50 px-4 py-2 rounded-lg border border-emerald-200 flex-1">
+              <span class="text-emerald-700 font-bold text-xl block sm:inline sm:mr-3">${item.ans}</span>
+              <span class="text-emerald-600 text-[15px] block sm:inline italic">${item.degrees}</span>
+            </div>
+          `;
+        }
+
+        return `
+          <div class="flex flex-col xl:flex-row xl:items-center bg-slate-50 border border-slate-200 p-4 rounded-xl">
+            <div class="font-medium text-slate-800 xl:w-2/5 mb-3 xl:mb-0 text-xl flex items-center">
+              <span class="mr-2">🎭</span> ${item.text}
+            </div>
+            <div class="xl:w-3/5 flex items-center flex-wrap gap-3">
+              <span class="text-slate-400 text-xl hidden xl:block">→</span>
+              <input type="text" class="flex-1 min-w-[150px] p-3 text-xl border border-amber-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none bg-white" placeholder="Напишите наречие..." ${disabled}>
+              <button onclick="revealT4('${item.id}')" class="p-3 rounded-lg border transition-colors flex-shrink-0 ${btnClass}" title="Подсмотреть правильный ответ" ${disabled}>
+                <i data-lucide="eye" class="w-6 h-6"></i>
+              </button>
+              ${revealHtml}
+            </div>
+          </div>
+        `;
+      }).join('');
+      lucide.createIcons();
+    }
+
+    function revealT4(id) {
+      if(progress.task4.completed) return;
+      t4Revealed[id] = true;
+      renderTask4();
+    }
+
+    document.getElementById('t4-check-btn').addEventListener('click', () => {
+      markTaskComplete('task4', 2);
+      document.getElementById('t4-check-btn').classList.add('hidden');
+      document.getElementById('t4-success').classList.remove('hidden');
+      renderTask4(); // to disable inputs
+    });
+
+    // --- TASK 5 ---
+    const t5PoemData = [
+      { id: 0, textBefore: "Мой друг! Что может быть ", word: "милей", correct: "прилагательное", val: "", textAfter: "<br/>Бесценного родного края?<br/>Там солнце кажется " },
+      { id: 1, textBefore: "", word: "светлей", correct: "прилагательное", val: "", textAfter: ",<br/>Там " },
+      { id: 2, textBefore: "", word: "радостней", correct: "прилагательное", val: "", textAfter: " весна златая,<br/>" },
+      { id: 3, textBefore: "", word: "Прохладней", correct: "прилагательное", val: "", textAfter: " легкий ветерок,<br/>" },
+      { id: 4, textBefore: "", word: "Душистее", correct: "прилагательное", val: "", textAfter: " цветы, холмы там " },
+      { id: 5, textBefore: "", word: "зеленее", correct: "прилагательное", val: "", textAfter: ",<br/>Там " },
+      { id: 6, textBefore: "", word: "сладостней", correct: "наречие", val: "", textAfter: " журчит поток,<br/>Там соловей поет " },
+      { id: 7, textBefore: "", word: "звучнее", correct: "наречие", val: "", textAfter: ",<br/>Там все нас может восхищать,<br/>Там все " },
+      { id: 8, textBefore: "", word: "прекрасно", correct: "прилагательное", val: "", textAfter: ", там все " },
+      { id: 9, textBefore: "", word: "мило", correct: "прилагательное", val: "", textAfter: "." }
+    ];
+    let t5Checked = false;
+
+    function renderTask5() {
+      const container = document.getElementById('t5-container');
+      const isCompleted = progress.task5.completed;
+      let html = "";
+      
+      t5PoemData.forEach(item => {
+        html += item.textBefore;
+        
+        let selectClass = "mx-2 text-xl font-sans font-bold border-2 rounded p-1 outline-none transition-colors ";
+        if (t5Checked && item.val) {
+          if (item.val === item.correct) {
+            selectClass += "border-green-500 bg-green-50 text-green-700";
+          } else {
+            selectClass += "border-red-500 bg-red-50 text-red-700";
+          }
+        } else {
+          selectClass += "border-emerald-300 bg-white text-emerald-800 focus:ring-2 focus:ring-emerald-500";
+        }
+        
+        const disabled = isCompleted ? "disabled" : "";
+        const selEmpty = item.val === "" ? "selected" : "";
+        const selPril = item.val === "прилагательное" ? "selected" : "";
+        const selNar = item.val === "наречие" ? "selected" : "";
+
+        html += `
+          <select id="t5-sel-${item.id}" onchange="handleT5Change(${item.id}, this.value)" class="${selectClass}" ${disabled}>
+            <option value="" ${selEmpty}>${item.word} (???)</option>
+            <option value="прилагательное" ${selPril}>прилагательное</option>
+            <option value="наречие" ${selNar}>наречие</option>
+          </select>
+        `;
+        html += item.textAfter;
+      });
+      container.innerHTML = html;
+    }
+
+    function handleT5Change(id, val) {
+      if(progress.task5.completed) return;
+      t5PoemData[id].val = val;
+      t5Checked = false;
+      renderTask5();
+      document.getElementById('t5-error-msg').classList.add('hidden');
+    }
+
+    document.getElementById('t5-check-btn').addEventListener('click', () => {
+      t5Checked = true;
+      const correctCount = t5PoemData.filter(w => w.val === w.correct).length;
+      const errorMsg = document.getElementById('t5-error-msg');
+      
+      if (correctCount === 10) {
+        markTaskComplete('task5', 3);
+        document.getElementById('t5-action-area').classList.add('hidden');
+        document.getElementById('t5-success').classList.remove('hidden');
+      } else {
+        errorMsg.innerText = `Правильно определено: ${correctCount} из 10. Исправьте ошибки, выделенные красным!`;
+        errorMsg.classList.remove('hidden');
+      }
+      renderTask5();
+    });
+
+
+    // --- TASK 6 ---
+    const t6Sentences = [
+      { id: 1, text: "Левый берег реки ниже правого.", correct: "прил" },
+      { id: 2, text: "Над морем самолет опустился ниже.", correct: "нар" },
+      { id: 3, text: "При объяснении точнее формулируйте мысли.", correct: "нар" },
+      { id: 4, text: "Ваш ответ точнее моего.", correct: "прил" },
+      { id: 5, text: "Новое здание театра красивее старого.", correct: "прил" },
+      { id: 6, text: "Вы пишите красивее меня.", correct: "нар" },
+      { id: 7, text: "В присутствии больного всегда говорили тише.", correct: "нар" },
+      { id: 8, text: "Сегодня море тише, чем вчера.", correct: "прил" }
+    ];
+    let t6Ans = {};
+    let t6Checked = false;
+
+    function renderTask6() {
+      const container = document.getElementById('t6-container');
+      const isCompleted = progress.task6.completed;
+
+      container.innerHTML = t6Sentences.map(s => {
+        let rowClasses = "bg-slate-50 border-slate-200";
+        let btnPrilClass = t6Ans[s.id] === 'прил' ? 'bg-cyan-500 text-white border-cyan-500' : 'bg-white text-slate-600 border-slate-300 hover:border-cyan-400';
+        let btnNarClass = t6Ans[s.id] === 'нар' ? 'bg-indigo-500 text-white border-indigo-500' : 'bg-white text-slate-600 border-slate-300 hover:border-indigo-400';
+
+        if (t6Checked && t6Ans[s.id]) {
+          if (t6Ans[s.id] === s.correct) {
+            rowClasses = "bg-green-50 border-green-400";
+            if(t6Ans[s.id] === 'прил') btnPrilClass = "bg-green-600 text-white border-green-600";
+            if(t6Ans[s.id] === 'нар') btnNarClass = "bg-green-600 text-white border-green-600";
+          } else {
+            rowClasses = "bg-red-50 border-red-300";
+            if(t6Ans[s.id] === 'прил') btnPrilClass = "bg-red-500 text-white border-red-500";
+            if(t6Ans[s.id] === 'нар') btnNarClass = "bg-red-500 text-white border-red-500";
+          }
+        }
+        
+        const disabled = isCompleted ? "disabled" : "";
+
+        return `
+          <div class="flex flex-col xl:flex-row xl:items-center justify-between p-4 border rounded-xl transition-colors ${rowClasses}">
+            <span class="text-slate-800 text-xl font-medium mb-4 xl:mb-0 xl:w-2/3">${s.id}. ${s.text}</span>
+            <div class="flex space-x-3">
+              <button onclick="handleT6Change(${s.id}, 'прил')" class="px-6 py-2 text-lg font-medium rounded-full border transition-colors ${btnPrilClass}" ${disabled}>Прилагательное</button>
+              <button onclick="handleT6Change(${s.id}, 'нар')" class="px-6 py-2 text-lg font-medium rounded-full border transition-colors ${btnNarClass}" ${disabled}>Наречие</button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function handleT6Change(id, val) {
+      if(progress.task6.completed) return;
+      t6Ans[id] = val;
+      t6Checked = false;
+      document.getElementById('t6-error-msg').classList.add('hidden');
+      renderTask6();
+    }
+
+    document.getElementById('t6-check-btn').addEventListener('click', () => {
+      t6Checked = true;
+      let score = 0;
+      t6Sentences.forEach(s => { if (t6Ans[s.id] === s.correct) score++; });
+      
+      if (score === 8) {
+        markTaskComplete('task6', 2);
+        document.getElementById('t6-action-area').classList.add('hidden');
+        document.getElementById('t6-success').classList.remove('hidden');
+      } else {
+        document.getElementById('t6-error-msg').classList.remove('hidden');
+      }
+      renderTask6();
+    });
+
+    // --- TASK 7 ---
+    const t7Items = [
+      {id: 1, wrong: "более раньше", correctAns: "раньше", text: "Наш дом построен более раньше, чем соседний."},
+      {id: 2, wrong: "более лучше", correctAns: "лучше", text: "Совместными усилиями можно более лучше организовать работу."},
+      {id: 3, wrong: "более внимательнее", correctAns: "более внимательно", text: "Он слушает меня более внимательнее."},
+      {id: 4, wrong: "хужее", correctAns: "хуже", text: "Мой брат рисует хужее меня."},
+      {id: 5, wrong: "чистее", correctAns: "чище", text: "Подмети пол чистее."}
+    ];
+    let t7Revealed = {};
+
+    function renderTask7() {
+      const container = document.getElementById('t7-container');
+      const isCompleted = progress.task7.completed;
+
+      container.innerHTML = t7Items.map(item => {
+        const isRevealed = t7Revealed[item.id];
+        let displayText = item.text;
+        
+        if (isRevealed) {
+          const parts = item.text.split(item.wrong);
+          displayText = `
+            ${parts[0]}
+            <span class="line-through-red font-bold px-2 bg-red-50 rounded mx-1">${item.wrong}</span>
+            <span class="text-green-600 font-bold bg-green-50 px-2 rounded ml-1">(${item.correctAns})</span>
+            ${parts[1]}
+          `;
+        }
+
+        const disabled = isCompleted ? "disabled" : "";
+        const btnClass = isRevealed ? 'bg-red-100 border-red-300 text-red-700' : 'bg-white border-slate-300 text-slate-400 hover:text-red-600';
+
+        return `
+          <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 flex flex-col md:flex-row md:items-center">
+            <p class="text-slate-800 text-xl md:w-3/5 mb-4 md:mb-0 leading-relaxed">${displayText}</p>
+            <div class="md:w-2/5 flex items-center space-x-3 justify-end">
+              <span class="text-slate-400 text-xl hidden md:inline">→</span>
+              <input type="text" placeholder="Правильно..." class="w-full md:w-auto flex-1 p-3 text-xl border border-red-300 rounded-lg focus:ring-2 focus:ring-red-500 outline-none bg-white" ${disabled}>
+              <button onclick="revealT7(${item.id})" class="p-3 rounded-lg border transition-colors flex-shrink-0 ${btnClass}" title="Подсмотреть правильный ответ и показать ошибку" ${disabled}>
+                <i data-lucide="eye" class="w-6 h-6"></i>
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+      lucide.createIcons();
+    }
+
+    function revealT7(id) {
+      if(progress.task7.completed) return;
+      t7Revealed[id] = true;
+      renderTask7();
+    }
+
+    document.getElementById('t7-check-btn').addEventListener('click', () => {
+      // Ищем все инпуты внутри контейнера и проверяем, что они заполнены
+      const inputs = document.getElementById('t7-container').querySelectorAll('input');
+      let filled = 0;
+      inputs.forEach(inp => { if(inp.value.trim() !== "") filled++; });
+      
+      if(filled >= 5) {
+         markTaskComplete('task7', 3);
+         document.getElementById('t7-check-btn').classList.add('hidden');
+         document.getElementById('t7-success').classList.remove('hidden');
+         renderTask7(); // to disable inputs
+      } else {
+         alert("Заполни все поля ввода!");
+      }
+    });
+
+    // --- REFLECTION ---
+    const refOptions = {
+      plus: ["Интересные задания", "Понятное объяснение", "Красивый дизайн", "Узнал(а) новое"],
+      minus: ["Было сложно", "Не хватило времени", "Некоторые темы непонятны", "Много читать"],
+      interesting: ["Формат урока", "Фразеологизмы", "Жанры журналистики", "Стихотворение"]
+    };
+    let refTags = { plus: [], minus: [], interesting: [] };
+
+    function renderReflection() {
+      // Plus
+      document.getElementById('ref-plus').innerHTML = refOptions.plus.map(tag => {
+        const isActive = refTags.plus.includes(tag);
+        const classes = isActive ? 'bg-green-500 text-white border-green-500' : 'bg-white text-green-700 border-green-200 hover:bg-green-50';
+        return `<button onclick="toggleRefTag('plus', '${tag}')" class="px-4 py-2 rounded-full text-lg font-medium transition-colors border ${classes}">${tag}</button>`;
+      }).join('');
+      
+      // Minus
+      document.getElementById('ref-minus').innerHTML = refOptions.minus.map(tag => {
+        const isActive = refTags.minus.includes(tag);
+        const classes = isActive ? 'bg-red-500 text-white border-red-500' : 'bg-white text-red-700 border-red-200 hover:bg-red-50';
+        return `<button onclick="toggleRefTag('minus', '${tag}')" class="px-4 py-2 rounded-full text-lg font-medium transition-colors border ${classes}">${tag}</button>`;
+      }).join('');
+      
+      // Interesting
+      document.getElementById('ref-interesting').innerHTML = refOptions.interesting.map(tag => {
+        const isActive = refTags.interesting.includes(tag);
+        const classes = isActive ? 'bg-purple-500 text-white border-purple-500' : 'bg-white text-purple-700 border-purple-200 hover:bg-purple-50';
+        return `<button onclick="toggleRefTag('interesting', '${tag}')" class="px-4 py-2 rounded-full text-lg font-medium transition-colors border ${classes}">${tag}</button>`;
+      }).join('');
+    }
+
+    function toggleRefTag(category, tag) {
+      const idx = refTags[category].indexOf(tag);
+      if(idx === -1) refTags[category].push(tag);
+      else refTags[category].splice(idx, 1);
+      renderReflection();
+    }
+
+    // --- INITIALIZE ---
+    function init() {
+      renderTask1();
+      renderTask4();
+      renderTask5();
+      renderTask6();
+      renderTask7();
+      renderReflection();
+      updateProgressUI();
+    }
+
+    init();
+  </script>
+</body>
+</html>
